@@ -1,5 +1,5 @@
-Feature: Attestations
+Feature: Position Categories
 
-  Scenario: Attestations
+  Scenario: Position Categories
     Given navigate to website
     When login

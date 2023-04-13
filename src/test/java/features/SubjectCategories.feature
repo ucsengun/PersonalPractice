@@ -1,5 +1,5 @@
-Feature: Attestations
+Feature: Subject Categories
 
-  Scenario: Attestations
+  Scenario: Subject Categories
     Given navigate to website
     When login

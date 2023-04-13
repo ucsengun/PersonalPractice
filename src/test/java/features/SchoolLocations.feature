@@ -1,5 +1,5 @@
-Feature: Attestations
+Feature: School Locations
 
-  Scenario: Attestations
+  Scenario: School Locations
     Given navigate to website
     When login

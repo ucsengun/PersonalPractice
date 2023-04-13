@@ -1,5 +1,5 @@
-Feature: Attestations
+Feature: Nationalities
 
-  Scenario: Attestations
+  Scenario: Nationalities
     Given navigate to website
     When login

@@ -1,5 +1,5 @@
-Feature: Attestations
+Feature: Grade Levels
 
-  Scenario: Attestations
+  Scenario: Grade Levels
     Given navigate to website
     When login

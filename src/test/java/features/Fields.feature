@@ -1,5 +1,5 @@
-Feature: Attestations
+Feature: Fields
 
-  Scenario: Attestations
+  Scenario: Fields
     Given navigate to website
     When login
