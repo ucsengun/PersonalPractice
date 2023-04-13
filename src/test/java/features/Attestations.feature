@@ -1,4 +1,4 @@
-Feature: Login attestations
+Feature: Attestations
 
   Scenario: Attestations
   Given navigate to website
