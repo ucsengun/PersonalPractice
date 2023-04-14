@@ -5,4 +5,4 @@ Feature: School Locations
     When login
     And click setup
     And click school setup
-    And click locations
+    And click school locations

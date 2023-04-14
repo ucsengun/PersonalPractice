@@ -7,4 +7,9 @@ public class Discounts {
     public void clickParameters() {
 
     }
+
+    @And("click discounts")
+    public void clickDiscounts() {
+
+    }
 }

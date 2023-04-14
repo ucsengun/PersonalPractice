@@ -7,4 +7,9 @@ public class PositionCategories {
     public void clickHumanResources() {
 
     }
+
+    @And("click position categories")
+    public void clickPositionCategories() {
+
+    }
 }

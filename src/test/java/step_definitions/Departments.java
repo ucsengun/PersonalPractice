@@ -7,4 +7,8 @@ public class Departments {
     public void clickSetup() {
 
     }
+
+    @And("click departments")
+    public void clickDepartments() {
+    }
 }
