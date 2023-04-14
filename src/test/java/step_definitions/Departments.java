@@ -5,5 +5,6 @@ import io.cucumber.java.en.And;
 public class Departments {
     @And("click setup")
     public void clickSetup() {
+
     }
 }
