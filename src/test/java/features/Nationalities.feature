@@ -6,3 +6,5 @@ Feature: Nationalities
     And click setup
     And click parameters
     And click nationalities
+    And type anything to search box
+    Then click search button for nationalities

@@ -6,4 +6,6 @@ Feature: Grade Levels
     And click setup
     And click parameters
     And click grade levels
-
+    And click hamburger menu
+    And click checkbox of id
+    Then verify id checkbox

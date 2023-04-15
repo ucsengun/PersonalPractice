@@ -1,6 +1,7 @@
 package step_definitions;
 
 import io.cucumber.java.en.And;
+import io.cucumber.java.en.Then;
 
 public class SubjectCategories {
     @And("click education")
@@ -15,5 +16,19 @@ public class SubjectCategories {
     @And("click subject categories")
     public void clickSubjectCategories() {
 
+    }
+
+    @And("click add button for subject categories")
+    public void clickAddButtonForSubjectCategories() {
+        
+    }
+
+    @And("fill form except subject category name")
+    public void fillFormExceptSubjectCategoryName() {
+        
+    }
+
+    @Then("see error message for subject category name")
+    public void seeErrorMessageForSubjectCategoryName() {
     }
 }
