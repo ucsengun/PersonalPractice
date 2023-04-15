@@ -7,3 +7,4 @@ Feature: Departments
     And click school setup
     And click departments
 
+

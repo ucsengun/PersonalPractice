@@ -10,5 +10,6 @@ public class Departments {
 
     @And("click departments")
     public void clickDepartments() {
+
     }
 }
