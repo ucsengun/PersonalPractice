@@ -24,7 +24,7 @@ public class Fields {
 
     @And("click save button for new fields")
     public void clickSaveButtonForNewFields() {
-        
+        fu.clickMethod(fu.getSaveFieldTypeFields());
     }
 
     @Then("see success message for new fields")

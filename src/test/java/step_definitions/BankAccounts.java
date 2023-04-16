@@ -9,7 +9,7 @@ public class BankAccounts {
     BankAccounts_POM bu = new BankAccounts_POM();
     @And("click setup from left frame")
     public void clickSetupFromLeftFrame() {
-        bu.clickMethod();
+        bu.clickMethod(bu.);
     }
 
     @And("click bank accounts")

@@ -9,17 +9,17 @@ public class Positions {
     Positions_POM pu = new Positions_POM();
     @And("click setup in human resources")
     public void clickSetupInHumanResources() {
-        
+        pu.clickMethod(pu.getHumanResourcesButton());
     }
 
     @And("click positions")
     public void clickPositions() {
-       // pu.clickMethod(pu.getPo);
+        pu.clickMethod(pu.getPositionsButton());
     }
 
     @And("click trash button for positions")
     public void clickTrashButtonForPositions() {
-        pu.clickMethod(pu.get);
+        pu.clickMethod;
     }
 
     @And("click delete positions button")

@@ -17,6 +17,9 @@ public class Positions_POM extends MyMethods {
     @FindBy(xpath= "//span[contains(text(), 'Setup']")
     private WebElement setupHumanResourcesButton;
 
+    @FindBy(xpath= "//span[normalize-space()='Positions']")
+    private WebElement positionsButton;
+
     @FindBy(xpath= "//tbody/tr[1]/td[5]/div[1]/ms-delete-button[1]/button[1]/span[1]/fa-icon[1]//*[name()='svg']")
     private WebElement ;
 
@@ -31,7 +34,7 @@ public class Positions_POM extends MyMethods {
         return setupHumanResourcesButton;
     }
 
-    public WebElement get() { return ; }
+    public WebElement getPositionsButton() { return positionsButton; }
 
     public WebElement getDeletePositionsButton() {
         return deletePositionsButton;

@@ -9,12 +9,12 @@ public class Departments {
     Departments_POM du = new Departments_POM();
     @And("click setup")
     public void clickSetup() {
-        //du.clickMethod();
+        du.clickMethod(du.getS);
     }
 
     @And("click school setup")
     public void clickSchoolSetup() {
-
+        du.clickMethod(du.getsc);
     }
 
     @And("click departments")

@@ -45,12 +45,12 @@ public class Attestations {
 
     @And("fill attestations name")
     public void fillAttestationsName() {
-        
+        au.sendKeysMethod(au.getAttestationsNameField(), "abcdef");
     }
 
     @And("click save button for new attestations")
     public void clickSaveButtonForNewAttestations() {
-        
+        au.clickMethod(au.getSaveNewAttestations());
     }
 
     @Then("success message for attestations")
