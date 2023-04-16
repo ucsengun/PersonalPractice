@@ -14,22 +14,24 @@ public class Discounts {
 
     @And("click discounts")
     public void clickDiscounts() {
-      //  diu.clickMethod(diu.get);
+      diu.clickMethod(diu.getDiscountsButton());
     }
 
     @And("click edit discounts")
     public void clickEditDiscounts() {
-        
+        diu.clickMethod(diu.getEditDiscountsButton());
     }
 
     @And("fill form again")
     public void fillFormAgain() {
-        
+        diu.sendKeysMethod(diu.getEditDescriptionField());
+        diu.sendKeysMethod(diu.getEditIntegrationCodeField());
+        diu.sendKeysMethod(diu.getEditPriorityField());
     }
 
     @And("click save button for discount")
     public void clickSaveButtonForDiscount() {
-        
+        diu.clickMethod(diu.getEditSaveButton());
     }
 
     @Then("see success message for editing discount")

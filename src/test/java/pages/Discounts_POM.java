@@ -11,11 +11,41 @@ public class Discounts_POM extends MyMethods {
         PageFactory.initElements(DriverClass.getDriver(), this);
     }
 
-    @FindBy(xpath= "//span[contains(text(), 'Human Resources')]")
-    private WebElement humanResourcesButton;
+    @FindBy(xpath= "//span[normalize-space()='Discounts']")
+    private WebElement discountsButton;
+
+    @FindBy(xpath= "(//*[name()='svg'][@role='img'])[164]")
+    private WebElement editDiscountsButton;
 
 
-    public WebElement getHumanResourcesButton() {
-        return humanResourcesButton;
+    @FindBy(xpath= "(//input[@id='ms-text-field-9'])[1]")
+    private WebElement editDescriptionField;
+
+    @FindBy(xpath= "//input[@id='ms-text-field-12']")
+    private WebElement editIntegrationCodeField;
+
+    @FindBy(xpath= "(//input[@id='ms-integer-field-1'])[1]")
+    private WebElement editPriorityField;
+
+    @FindBy(xpath= "//span[contains(text(),'Save')]")
+    private WebElement editSaveButton;
+
+    public WebElement getDiscountsButton() {
+        return discountsButton;
+    }
+
+    public WebElement getEditDiscountsButton() {
+        return editDiscountsButton;}
+
+    public WebElement getEditDescriptionField() {return editDescriptionField;}
+
+    public WebElement getEditIntegrationCodeField() {return editIntegrationCodeField;}
+
+    public WebElement getEditPriorityField() {
+        return editPriorityField;
+    }
+
+    public WebElement getEditSaveButton() {
+        return editSaveButton;
     }
 }

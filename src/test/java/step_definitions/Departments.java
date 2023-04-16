@@ -36,5 +36,6 @@ public class Departments {
 
     @Then("see error message for school code")
     public void seeErrorMessageForSchoolCode() {
+       // du.
     }
 }

@@ -32,7 +32,9 @@ public class SubjectCategories {
 
     @And("fill form except subject category name")
     public void fillFormExceptSubjectCategoryName() {
-        
+        sc.sendKeysMethod(sc.getSubjectCategoriesNameField(), "");
+        sc.sendKeysMethod(sc.getSubjectCategoriesCodeField(), "");
+
     }
 
     @Then("see error message for subject category name")
