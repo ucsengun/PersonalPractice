@@ -11,11 +11,27 @@ public class DocumentTypes_POM extends MyMethods {
         PageFactory.initElements(DriverClass.getDriver(), this);
     }
 
-    @FindBy(xpath= "//span[contains(text(), 'Human Resources')]")
-    private WebElement humanResourcesButton;
+    @FindBy(xpath= "//span[normalize-space()='Document Types']")
+    private WebElement documentTypesButton;
 
+    @FindBy(xpath= "//tbody/tr[1]/td[7]/div[1]/ms-delete-button[1]/button[1]/span[1]")
+    private WebElement documentTypesTrashButton;
 
-    public WebElement getHumanResourcesButton() {
-        return humanResourcesButton;
-    }
+    @FindBy(xpath= "//button[@type='submit']")
+    private WebElement documentTypesDeleteButton;
+
+    @FindBy(xpath = "(//div[contains(text(),'Location successfully deleted')])")
+    private WebElement documentTypesDeleteSuccessMessage;
+
+    public WebElement getDocumentTypesButton() {
+        return documentTypesButton;}
+
+    public WebElement getDocumentTypesTrashButton() {
+        return documentTypesTrashButton;}
+
+    public WebElement getDocumentTypesDeleteButton() {
+        return documentTypesDeleteButton;}
+
+    public WebElement getDocumentTypesDeleteSuccessMessage() {
+        return documentTypesDeleteSuccessMessage;}
 }
