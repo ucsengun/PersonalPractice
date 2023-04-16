@@ -11,11 +11,25 @@ public class GradeLevels_POM extends MyMethods {
         PageFactory.initElements(DriverClass.getDriver(), this);
     }
 
-    @FindBy(xpath= "//span[contains(text(), 'Human Resources')]")
-    private WebElement humanResourcesButton;
+    @FindBy(xpath= "//span[normalize-space()='Grade Levels']")
+    private WebElement gradeLevelsButton;
 
+    @FindBy(xpath= "//button[@class='mat-focus-indicator mat-menu-trigger mat-icon-button mat-button-base']//fa-icon[@class='ng-fa-icon']//*[name()='svg']")
+    private WebElement hamburgerMenu;
 
-    public WebElement getHumanResourcesButton() {
-        return humanResourcesButton;
+    @FindBy(xpath= "//span[normalize-space()='Grade Levels']")
+    private WebElement gradeLevelsButtonCheckBox;
+
+    public WebElement getGradeLevelsButton() {
+        return gradeLevelsButton;
     }
+
+    public WebElement getHamburgerMenu(){
+        return hamburgerMenu;
+    }
+
+    public WebElement getGradeLevelsButtonCheckBox(){
+        return gradeLevelsButtonCheckBox;
+    }
+
 }

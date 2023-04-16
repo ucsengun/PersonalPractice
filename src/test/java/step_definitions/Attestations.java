@@ -35,6 +35,7 @@ public class Attestations {
 
     @And("click attestations")
     public void clickAttestations() {
+
     }
 
     @And("click add attestations")

@@ -11,11 +11,11 @@ public class Fields_POM extends MyMethods {
         PageFactory.initElements(DriverClass.getDriver(), this);
     }
 
-    @FindBy(xpath= "//span[contains(text(), 'Human Resources')]")
-    private WebElement humanResourcesButton;
+    @FindBy(xpath= "//span[normalize-space()='Fields']")
+    private WebElement fieldsButton;
 
 
-    public WebElement getHumanResourcesButton() {
-        return humanResourcesButton;
+    public WebElement getFieldsButton() {
+        return fieldsButton;
     }
 }

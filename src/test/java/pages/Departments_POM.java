@@ -14,8 +14,15 @@ public class Departments_POM extends MyMethods {
     @FindBy(xpath= "//span[contains(text(), 'Human Resources')]")
     private WebElement humanResourcesButton;
 
+    @FindBy(xpath = "(//span[normalize-space()='Departments'])[1]")
+    private WebElement departmentsButton;
+
 
     public WebElement getHumanResourcesButton() {
         return humanResourcesButton;
+    }
+
+    public WebElement getDepartmentsButton() {
+        return departmentsButton;
     }
 }
