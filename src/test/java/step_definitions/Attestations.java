@@ -4,6 +4,7 @@ import io.cucumber.java.en.And;
 import io.cucumber.java.en.Given;
 import io.cucumber.java.en.Then;
 import io.cucumber.java.en.When;
+import pages.Attestations_POM;
 import pages.Login_POM;
 
 import static utilities.DriverClass.getDriver;
@@ -11,6 +12,8 @@ import static utilities.DriverClass.getDriver;
 public class Attestations {
 
     Login_POM ul = new Login_POM();
+
+    Attestations_POM au = new Attestations_POM();
 
     @Given("navigate to website")
     public void navigateToWebsite() {
@@ -27,7 +30,7 @@ public class Attestations {
 
     @And("click setup button for attestations")
     public void clickSetupButtonForAttestations() {
-        
+        au.clickMethod(au.getHumanResourcesButton());
     }
 
     @And("click attestations")
