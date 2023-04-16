@@ -22,6 +22,12 @@ public class Login_POM extends MyMethods {
     @FindBy(xpath = "//div[@id='cconsent-bar']//button[@class='consent-give']")
     private WebElement acceptCookies;
 
+    @FindBy(css = "input[placeholder='Username']")
+    private WebElement usernameInputArea;
+
+    @FindBy(xpath = "//input[@placeholder='Password']")
+    private WebElement passwordInputArea;
+
     public WebElement getAcceptCookies() {
         return acceptCookies;
     }
@@ -40,5 +46,13 @@ public class Login_POM extends MyMethods {
 
     public WebElement getLoginButton() {
         return loginButton;
+    }
+
+    public WebElement getUsernameInputArea() {
+        return usernameInputArea;
+    }
+
+    public WebElement getPasswordInputArea() {
+        return passwordInputArea;
     }
 }

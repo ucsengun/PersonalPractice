@@ -4,15 +4,25 @@ import io.cucumber.java.en.And;
 import io.cucumber.java.en.Given;
 import io.cucumber.java.en.Then;
 import io.cucumber.java.en.When;
+import pages.Login_POM;
+
+import static utilities.DriverClass.getDriver;
 
 public class Attestations {
+
+    Login_POM ul = new Login_POM();
+
     @Given("navigate to website")
     public void navigateToWebsite() {
+        getDriver().get("https://test.mersys.io/");
+
     }
 
     @When("login")
     public void login() {
-
+        ul.sendKeysMethod(ul.getUsernameInputArea(), "turkeyts");
+        ul.sendKeysMethod(ul.getPasswordInputArea(), "TechnoStudy123");
+        ul.clickMethod(ul.getLoginButton());
     }
 
     @And("click setup button for attestations")
