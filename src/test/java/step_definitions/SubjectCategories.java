@@ -2,8 +2,11 @@ package step_definitions;
 
 import io.cucumber.java.en.And;
 import io.cucumber.java.en.Then;
+import pages.SchoolLocations_POM;
 
 public class SubjectCategories {
+
+    SchoolLocations_POM su = new SchoolLocations_POM();
     @And("click education")
     public void clickEducation() {
     }

@@ -2,8 +2,11 @@ package step_definitions;
 
 import io.cucumber.java.en.And;
 import io.cucumber.java.en.Then;
+import pages.Discounts_POM;
 
 public class Discounts {
+
+    Discounts_POM diu = new Discounts_POM();
     @And("click parameters")
     public void clickParameters() {
 
@@ -11,7 +14,7 @@ public class Discounts {
 
     @And("click discounts")
     public void clickDiscounts() {
-
+      //  diu.clickMethod(diu.get);
     }
 
     @And("click edit discounts")

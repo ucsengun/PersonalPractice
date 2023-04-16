@@ -35,12 +35,12 @@ public class Attestations {
 
     @And("click attestations")
     public void clickAttestations() {
-
+    au.clickMethod(au.getAttestationsButton());
     }
 
     @And("click add attestations")
     public void clickAddAttestations() {
-        
+     au.clickMethod(au.getAddAttestationsButton());
     }
 
     @And("fill attestations name")
