@@ -15,7 +15,23 @@ public class PositionsCategories_POM extends MyMethods {
     private WebElement humanResourcesButton;
 
 
+    @FindBy(xpath= "//span[normalize-space()='Position Categories']")
+    private WebElement positionCategoriesButton;
+
+    @FindBy(xpath= "//tbody/tr[1]/td[3]/div[1]/ms-edit-button[1]/button[1]/span[1]/fa-icon[1]//*[name()='svg']")
+    private WebElement editPositionCategoriesButton;
+
+
+
     public WebElement getHumanResourcesButton() {
         return humanResourcesButton;
+    }
+
+    public WebElement getPositionCategoriesButton() {
+        return positionCategoriesButton;
+    }
+
+    public WebElement getEditPositionCategoriesButton() {
+        return editPositionCategoriesButton;
     }
 }

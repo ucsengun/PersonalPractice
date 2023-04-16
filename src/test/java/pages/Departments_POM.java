@@ -52,8 +52,8 @@ public class Departments_POM extends MyMethods {
         return codeSpace;
     }
 
-    public WebElement getNameSpace() {
-        return nameSpace;
+    public WebElement getSaveButton() {
+        return saveButton;
     }
 
     public WebElement getSuccessMessage() {
