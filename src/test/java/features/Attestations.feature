@@ -1,6 +1,6 @@
 Feature: Attestations
 
-  Scenario: Attestations
+  Scenario: Validate add new attestations
   Given navigate to website
   When login
   And click human resources

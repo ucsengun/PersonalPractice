@@ -1,6 +1,6 @@
 Feature: Departments
 
-  Scenario: Departments
+  Scenario: Validate Add New School Departments Without School Code
     Given navigate to website
     When login
     And click setup

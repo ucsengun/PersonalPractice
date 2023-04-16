@@ -30,5 +30,6 @@ public class SubjectCategories {
 
     @Then("see error message for subject category name")
     public void seeErrorMessageForSubjectCategoryName() {
+
     }
 }

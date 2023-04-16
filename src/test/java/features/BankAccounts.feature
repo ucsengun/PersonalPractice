@@ -1,6 +1,6 @@
 Feature: Bank Accounts
 
-  Scenario: Bank Accounts
+  Scenario: Validate Delete Bank Account
     Given navigate to website
     When login
     And click setup from left frame
