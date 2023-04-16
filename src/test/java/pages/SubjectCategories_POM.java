@@ -11,11 +11,47 @@ public class SubjectCategories_POM extends MyMethods {
         PageFactory.initElements(DriverClass.getDriver(), this);
     }
 
-    @FindBy(xpath= "//span[contains(text(), 'Human Resources')]")
-    private WebElement humanResourcesButton;
+    @FindBy(xpath= "//span[text()='Education']")
+    private WebElement educationButton;
 
+    @FindBy(xpath= "//span[text()='Setup']")
+    private WebElement educationSetupButton;
 
-    public WebElement getHumanResourcesButton() {
-        return humanResourcesButton;
+    @FindBy(xpath= "//span[normalize-space()='Subject Categories']")
+    private WebElement subjectCategoriesButton;
+
+    @FindBy(xpath= "(//*[name()='svg'][@class='svg-inline--fa fa-plus'])[1]")
+    private WebElement addSubjectCategoriesButton;
+
+    @FindBy(xpath= "//input[@id='ms-text-field-2']")
+    private WebElement subjectCategoriesNameField;
+
+    @FindBy(xpath= "(//input[@id='ms-text-field-3'])[1]")
+    private WebElement subjectCategoriesCodeField;
+
+    @FindBy(xpath= "(//mat-error[@id='mat-error-4'])[1]")
+    private WebElement subjectCategoriesNameError;
+
+    public WebElement getEducationButton() {
+        return educationButton;
+    }
+
+    public WebElement getEducationSetupButton() {return educationSetupButton;}
+
+    public WebElement getSubjectCategoriesButton() {
+        return subjectCategoriesButton;
+    }
+
+    public WebElement getAddSubjectCategoriesButton() {
+        return addSubjectCategoriesButton;
+    }
+
+    public WebElement getSubjectCategoriesNameField(){ return  subjectCategoriesNameField;}
+
+    public WebElement getSubjectCategoriesCodeField() {
+        return subjectCategoriesCodeField;}
+
+    public WebElement getSubjectCategoriesNameError() {
+        return subjectCategoriesNameError;
     }
 }

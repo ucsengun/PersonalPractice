@@ -19,7 +19,7 @@ public class Positions {
 
     @And("click trash button for positions")
     public void clickTrashButtonForPositions() {
-        
+        pu.clickMethod(pu.get);
     }
 
     @And("click delete positions button")
