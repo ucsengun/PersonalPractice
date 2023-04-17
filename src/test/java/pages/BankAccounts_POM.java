@@ -21,7 +21,7 @@ import utilities.MyMethods;
         private WebElement deleteBankAccountsButton;
 
         @FindBy(xpath= " ")
-        private WebElement ;
+        private WebElement deleteSuccessMessage;
 
         public WebElement getBankAccountsButton() {
             return bankAccountsButton;
@@ -33,6 +33,10 @@ import utilities.MyMethods;
 
         public WebElement getDeleteBankAccountsButton() {
             return deleteBankAccountsButton;
+        }
+
+        public WebElement getDeleteSuccessMessage() {
+            return deleteSuccessMessage;
         }
     }
 

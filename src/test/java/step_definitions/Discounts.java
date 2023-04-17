@@ -2,6 +2,7 @@ package step_definitions;
 
 import io.cucumber.java.en.And;
 import io.cucumber.java.en.Then;
+import org.testng.Assert;
 import pages.Discounts_POM;
 
 public class Discounts {
@@ -36,6 +37,6 @@ public class Discounts {
 
     @Then("see success message for editing discount")
     public void seeSuccessMessageForEditingDiscount() {
-
+        Assert.assertTrue(diu.verifyIsDisplayedMethod(diu.getSuccessEditMessage()));
     }
 }

@@ -2,6 +2,7 @@ package step_definitions;
 
 import io.cucumber.java.en.And;
 import io.cucumber.java.en.Then;
+import org.testng.Assert;
 import pages.Fields_POM;
 
 public class Fields {
@@ -29,6 +30,6 @@ public class Fields {
 
     @Then("see success message for new fields")
     public void seeSuccessMessageForNewFields() {
-
+        Assert.assertTrue(fu.verifyIsDisplayedMethod(fu.getEditSuccessMessage()));
     }
 }

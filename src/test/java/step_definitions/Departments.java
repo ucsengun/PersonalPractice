@@ -2,6 +2,7 @@ package step_definitions;
 
 import io.cucumber.java.en.And;
 import io.cucumber.java.en.Then;
+import org.testng.Assert;
 import pages.Departments_POM;
 
 public class Departments {
@@ -36,6 +37,6 @@ public class Departments {
 
     @Then("see error message for school code")
     public void seeErrorMessageForSchoolCode() {
-       // du.
+        Assert.assertTrue(du.verifyIsDisplayedMethod(du.getSuccessMessage()));
     }
 }

@@ -32,6 +32,9 @@ public class Fields_POM extends MyMethods {
     @FindBy(xpath= "//button[@class='mat-focus-indicator mat-tooltip-trigger mat-accent mat-button mat-button-base ng-star-inserted mat-raised-button']")
     private WebElement saveFieldTypeFields;
 
+    @FindBy(xpath= " ")
+    private WebElement editSuccessMessage;
+
     public WebElement getFieldsButton() {
         return fieldsButton;
     }
@@ -49,4 +52,6 @@ public class Fields_POM extends MyMethods {
     public WebElement getChooseFieldTypeFields() { return chooseFieldTypeFields;}
 
     public WebElement getSaveFieldTypeFields() { return saveFieldTypeFields;}
+
+    public WebElement getEditSuccessMessage(){ return editSuccessMessage;}
     }

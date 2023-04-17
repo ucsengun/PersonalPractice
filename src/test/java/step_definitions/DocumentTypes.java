@@ -2,6 +2,7 @@ package step_definitions;
 
 import io.cucumber.java.en.And;
 import io.cucumber.java.en.Then;
+import org.testng.Assert;
 import pages.DocumentTypes_POM;
 
 public class DocumentTypes {
@@ -24,6 +25,6 @@ public class DocumentTypes {
 
     @Then("see success message for deleting document types")
     public void seeSuccessMessageForDeletingDocumentTypes() {
-
+        Assert.assertTrue(dtu.verifyIsDisplayedMethod(dtu.getDocumentTypesDeleteSuccessMessage()));
     }
 }

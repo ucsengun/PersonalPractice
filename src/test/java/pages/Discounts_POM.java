@@ -32,6 +32,9 @@ public class Discounts_POM extends MyMethods {
     @FindBy(xpath= "//span[contains(text(),'Save')]")
     private WebElement editSaveButton;
 
+    @FindBy(xpath= " ")
+    private WebElement successEditMessage;
+
     public WebElement getParametersButton() {
         return parametersButton;
     }
@@ -53,5 +56,9 @@ public class Discounts_POM extends MyMethods {
 
     public WebElement getEditSaveButton() {
         return editSaveButton;
+    }
+
+    public WebElement getSuccessEditMessage() {
+        return successEditMessage;
     }
 }
