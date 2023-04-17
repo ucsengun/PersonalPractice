@@ -2,6 +2,7 @@ package step_definitions;
 
 import io.cucumber.java.en.And;
 import io.cucumber.java.en.Then;
+import org.testng.Assert;
 import pages.SchoolLocations_POM;
 import pages.SubjectCategories_POM;
 
@@ -33,12 +34,12 @@ public class SubjectCategories {
     @And("fill form except subject category name")
     public void fillFormExceptSubjectCategoryName() {
         sc.sendKeysMethod(sc.getSubjectCategoriesNameField(), "");
-        sc.sendKeysMethod(sc.getSubjectCategoriesCodeField(), "");
+        sc.sendKeysMethod(sc.getSubjectCategoriesCodeField(), "uuuuuu");
 
     }
 
     @Then("see error message for subject category name")
     public void seeErrorMessageForSubjectCategoryName() {
-
+        Assert.assertTrue(sc.verifyIsDisplayedMethod(sc.getSubjectCategoriesNameError()));
     }
 }

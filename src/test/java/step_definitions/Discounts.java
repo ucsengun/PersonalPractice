@@ -9,7 +9,7 @@ public class Discounts {
     Discounts_POM diu = new Discounts_POM();
     @And("click parameters")
     public void clickParameters() {
-
+        diu.clickMethod(diu.getParametersButton());
     }
 
     @And("click discounts")
@@ -24,9 +24,9 @@ public class Discounts {
 
     @And("fill form again")
     public void fillFormAgain() {
-        diu.sendKeysMethod(diu.getEditDescriptionField());
-        diu.sendKeysMethod(diu.getEditIntegrationCodeField());
-        diu.sendKeysMethod(diu.getEditPriorityField());
+        diu.sendKeysMethod(diu.getEditDescriptionField(), "bbb");
+        diu.sendKeysMethod(diu.getEditIntegrationCodeField(), "ddd");
+        diu.sendKeysMethod(diu.getEditPriorityField(), "eee");
     }
 
     @And("click save button for discount")

@@ -11,6 +11,12 @@ public class Departments_POM extends MyMethods {
         PageFactory.initElements(DriverClass.getDriver(), this);
     }
 
+
+    @FindBy(xpath= "//span[text()='Setup']")
+    private WebElement setupButton;
+
+    @FindBy(xpath= "//span[(text()='School Setup')]")
+    private WebElement schoolSetupButton;
     @FindBy(xpath= "//span[contains(text(), 'Human Resources')]")
     private WebElement humanResourcesButton;
 
@@ -31,6 +37,14 @@ public class Departments_POM extends MyMethods {
 
     @FindBy(xpath = "//div[contains(text(),'successfully')]")
     private WebElement successMessage;
+
+    public WebElement getSetupButton() {
+        return setupButton;
+    }
+
+    public WebElement getSchoolSetupButton() {
+        return schoolSetupButton;
+    }
 
     public WebElement getHumanResourcesButton() {
         return humanResourcesButton;
