@@ -20,6 +20,8 @@ public class GradeLevels_POM extends MyMethods {
     @FindBy(xpath= "//span[normalize-space()='Grade Levels']")
     private WebElement gradeLevelsButtonCheckBox;
 
+    @FindBy(xpath= "//div[@id='cdk-drop-list-2']//div[1]")
+    private WebElement successCheckBox;
     public WebElement getGradeLevelsButton() {
         return gradeLevelsButton;
     }
@@ -32,4 +34,7 @@ public class GradeLevels_POM extends MyMethods {
         return gradeLevelsButtonCheckBox;
     }
 
+    public WebElement getSuccessCheckBox() {
+        return successCheckBox;
+    }
 }

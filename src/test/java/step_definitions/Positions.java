@@ -2,6 +2,7 @@ package step_definitions;
 
 import io.cucumber.java.en.And;
 import io.cucumber.java.en.Then;
+import org.testng.Assert;
 import pages.Positions_POM;
 
 public class Positions {
@@ -29,6 +30,6 @@ public class Positions {
 
     @Then("see success message for deleting position")
     public void seeSuccessMessageForDeletingPosition() {
-
+        Assert.assertTrue(pu.verifyIsDisplayedMethod(pu.getDeleteSuccessMessage()));
     }
 }

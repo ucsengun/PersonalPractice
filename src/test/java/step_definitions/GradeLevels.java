@@ -25,7 +25,6 @@ public class GradeLevels {
 
     @Then("verify id checkbox")
     public void verifyIdCheckbox() {
-       // gu.
-        //Assert.assertTrue();
+       Assert.assertTrue(gu.verifyIsDisplayedMethod(gu.getSuccessCheckBox()));
     }
 }

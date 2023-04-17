@@ -27,7 +27,7 @@ public class Positions_POM extends MyMethods {
     private WebElement deletePositionsButton;
 
     @FindBy(xpath= "")
-    private WebElement n;
+    private WebElement deleteSuccessMessage;
 
     public WebElement getHumanResourcesButton() {
         return humanResourcesButton;
@@ -47,5 +47,7 @@ public class Positions_POM extends MyMethods {
         return deletePositionsButton;
     }
 
-
+    public WebElement getDeleteSuccessMessage() {
+        return deleteSuccessMessage;
+    }
 }
