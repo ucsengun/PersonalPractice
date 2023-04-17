@@ -2,7 +2,11 @@ package step_definitions;
 
 import io.cucumber.java.en.And;
 import io.cucumber.java.en.Then;
+import org.openqa.selenium.Keys;
+import org.openqa.selenium.interactions.Action;
+import org.openqa.selenium.interactions.Actions;
 import pages.PositionsCategories_POM;
+import utilities.DriverClass;
 
 public class PositionCategories {
 
@@ -24,7 +28,35 @@ public class PositionCategories {
 
     @And("edit name position categories")
     public void editNamePositionCategories() {
-        // Action
+        pou.clickMethod(pou.getEditPositionCategoriesName());
+        Actions actions = new Actions(DriverClass.getDriver());
+        Action doubleClickPriority = actions.moveToElement(pou.getEditPositionCategoriesName()).doubleClick().build();
+        doubleClickPriority.perform();
+
+        Action deletePriority = actions.sendKeys(pou.getEditPositionCategoriesName(), Keys.DELETE).build();
+        deletePriority.perform();
+
+        pou.sendKeysMethod(pou.getEditPositionCategoriesName(), "1000");
+
+        pou.clickMethod(pou.getedi());
+        Actions actions = new Actions(DriverClass.getDriver());
+        Action doubleClickPriority = actions.moveToElement(pou.getEditPositionCategoriesName()).doubleClick().build();
+        doubleClickPriority.perform();
+
+        Action deletePriority = actions.sendKeys(pou.getEditPositionCategoriesName(), Keys.DELETE).build();
+        deletePriority.perform();
+
+        pou.sendKeysMethod(pou.getEditPositionCategoriesName(), "1000");
+
+        pou.clickMethod(pou.getEditPositionCategoriesName());
+        Actions actions = new Actions(DriverClass.getDriver());
+        Action doubleClickPriority = actions.moveToElement(pou.getEditPositionCategoriesName()).doubleClick().build();
+        doubleClickPriority.perform();
+
+        Action deletePriority = actions.sendKeys(pou.getEditPositionCategoriesName(), Keys.DELETE).build();
+        deletePriority.perform();
+
+        pou.sendKeysMethod(pou.getEditPositionCategoriesName(), "1000");
     }
 
     @Then("click save button for position categories")

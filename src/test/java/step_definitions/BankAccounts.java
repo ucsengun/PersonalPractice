@@ -40,7 +40,7 @@ public class BankAccounts {
 
     @Then("see success message for deleting bank account")
     public void seeSuccessMessageForDeletingBankAccount() {
-       //bu.
+       /bu.clickMethod(bu.get);
     }
 
 }

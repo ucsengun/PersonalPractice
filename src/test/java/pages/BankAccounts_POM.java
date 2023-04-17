@@ -20,6 +20,9 @@ import utilities.MyMethods;
         @FindBy(xpath= "//button[@type='submit']")
         private WebElement deleteBankAccountsButton;
 
+        @FindBy(xpath= " ")
+        private WebElement ;
+
         public WebElement getBankAccountsButton() {
             return bankAccountsButton;
         }

@@ -26,6 +26,9 @@ public class Positions_POM extends MyMethods {
     @FindBy(xpath= "//button[@type='submit']")
     private WebElement deletePositionsButton;
 
+    @FindBy(xpath= "")
+    private WebElement n;
+
     public WebElement getHumanResourcesButton() {
         return humanResourcesButton;
     }
