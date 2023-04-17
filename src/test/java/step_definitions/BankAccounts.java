@@ -3,13 +3,24 @@ package step_definitions;
 import io.cucumber.java.en.And;
 import io.cucumber.java.en.Then;
 import pages.BankAccounts_POM;
+import pages.Departments_POM;
+import pages.Discounts_POM;
 
 public class BankAccounts {
 
     BankAccounts_POM bu = new BankAccounts_POM();
+
+    Discounts_POM diu = new Discounts_POM();
+
+    Departments_POM du = new Departments_POM();
     @And("click setup from left frame")
     public void clickSetupFromLeftFrame() {
-        bu.clickMethod(bu.);
+        du.clickMethod(du.getSetupButton());
+    }
+
+    @And("click parameters for bank accounts")
+    public void clickParametersForBankAccounts() {
+        diu.clickMethod(diu.getParametersButton());
     }
 
     @And("click bank accounts")
@@ -31,4 +42,5 @@ public class BankAccounts {
     public void seeSuccessMessageForDeletingBankAccount() {
        //bu.
     }
+
 }
