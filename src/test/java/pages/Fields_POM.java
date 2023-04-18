@@ -11,28 +11,28 @@ public class Fields_POM extends MyMethods {
         PageFactory.initElements(DriverClass.getDriver(), this);
     }
 
-    @FindBy(xpath= "//span[normalize-space()='Fields']")
+    @FindBy(xpath = "(//span[text()='Fields'])[1]")
     private WebElement fieldsButton;
 
-    @FindBy(xpath= "(//*[name()='svg'][@class='svg-inline--fa fa-plus'])[1]")
+    @FindBy(css = "svg[class='svg-inline--fa fa-plus']")
     private WebElement addFieldsButton;
 
-    @FindBy(xpath= "(//input[@id='ms-text-field-15'])[1]")
+    @FindBy(xpath = "(//input[@data-placeholder='Name'])[2]")
     private WebElement fillNameFields;
 
-    @FindBy(xpath= "(//input[@id='ms-text-field-16'])[1]")
+    @FindBy(xpath = "(//input[@data-placeholder='Code'])[2]")
     private WebElement codeNameFields;
 
-    @FindBy(xpath= "(//div[@class='mat-select-arrow ng-tns-c88-394'])[1]")
+    @FindBy(css = "div[id='mat-select-4-panel']")
     private WebElement fieldTypeFields;
 
-    @FindBy(xpath= "(//span[@class='mat-option-text'][normalize-space()='Date'])")
+    @FindBy(xpath = "//span[text()=' Logical ']")
     private WebElement chooseFieldTypeFields;
 
-    @FindBy(xpath= "//button[@class='mat-focus-indicator mat-tooltip-trigger mat-accent mat-button mat-button-base ng-star-inserted mat-raised-button']")
+    @FindBy(xpath = "//span[text()='Save']")
     private WebElement saveFieldTypeFields;
 
-    @FindBy(xpath= " ")
+    @FindBy(xpath = "//div[text()='Field successfully updated']")
     private WebElement editSuccessMessage;
 
     public WebElement getFieldsButton() {

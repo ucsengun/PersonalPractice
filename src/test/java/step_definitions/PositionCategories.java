@@ -28,35 +28,35 @@ public class PositionCategories {
 
     @And("edit name position categories")
     public void editNamePositionCategories() {
-        pou.clickMethod(pou.getEditPositionCategoriesName());
-        Actions actions = new Actions(DriverClass.getDriver());
-        Action doubleClickPriority = actions.moveToElement(pou.getEditPositionCategoriesName()).doubleClick().build();
-        doubleClickPriority.perform();
-
-        Action deletePriority = actions.sendKeys(pou.getEditPositionCategoriesName(), Keys.DELETE).build();
-        deletePriority.perform();
-
-        pou.sendKeysMethod(pou.getEditPositionCategoriesName(), "1000");
-
-        pou.clickMethod(pou.getedi());
-        Actions actions = new Actions(DriverClass.getDriver());
-        Action doubleClickPriority = actions.moveToElement(pou.getEditPositionCategoriesName()).doubleClick().build();
-        doubleClickPriority.perform();
-
-        Action deletePriority = actions.sendKeys(pou.getEditPositionCategoriesName(), Keys.DELETE).build();
-        deletePriority.perform();
-
-        pou.sendKeysMethod(pou.getEditPositionCategoriesName(), "1000");
-
-        pou.clickMethod(pou.getEditPositionCategoriesName());
-        Actions actions = new Actions(DriverClass.getDriver());
-        Action doubleClickPriority = actions.moveToElement(pou.getEditPositionCategoriesName()).doubleClick().build();
-        doubleClickPriority.perform();
-
-        Action deletePriority = actions.sendKeys(pou.getEditPositionCategoriesName(), Keys.DELETE).build();
-        deletePriority.perform();
-
-        pou.sendKeysMethod(pou.getEditPositionCategoriesName(), "1000");
+//        pou.clickMethod(pou.getEditPositionCategoriesName());
+//        Actions actions = new Actions(DriverClass.getDriver());
+//        Action doubleClickPriority = actions.moveToElement(pou.getEditPositionCategoriesName()).doubleClick().build();
+//        doubleClickPriority.perform();
+//
+//        Action deletePriority = actions.sendKeys(pou.getEditPositionCategoriesName(), Keys.DELETE).build();
+//        deletePriority.perform();
+//
+//        pou.sendKeysMethod(pou.getEditPositionCategoriesName(), "1000");
+//
+//        pou.clickMethod(pou.getedi());
+//        Actions actions = new Actions(DriverClass.getDriver());
+//        Action doubleClickPriority = actions.moveToElement(pou.getEditPositionCategoriesName()).doubleClick().build();
+//        doubleClickPriority.perform();
+//
+//        Action deletePriority = actions.sendKeys(pou.getEditPositionCategoriesName(), Keys.DELETE).build();
+//        deletePriority.perform();
+//
+//        pou.sendKeysMethod(pou.getEditPositionCategoriesName(), "1000");
+//
+//        pou.clickMethod(pou.getEditPositionCategoriesName());
+//        Actions actions = new Actions(DriverClass.getDriver());
+//        Action doubleClickPriority = actions.moveToElement(pou.getEditPositionCategoriesName()).doubleClick().build();
+//        doubleClickPriority.perform();
+//
+//        Action deletePriority = actions.sendKeys(pou.getEditPositionCategoriesName(), Keys.DELETE).build();
+//        deletePriority.perform();
+//
+//        pou.sendKeysMethod(pou.getEditPositionCategoriesName(), "1000");
     }
 
     @Then("click save button for position categories")

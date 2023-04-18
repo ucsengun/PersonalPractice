@@ -11,12 +11,12 @@ public class Discounts_POM extends MyMethods {
         PageFactory.initElements(DriverClass.getDriver(), this);
     }
 
-    @FindBy(xpath= "//span[@class='nav-link-title ng-tns-c110-49 ng-star-inserted'][contains(text(),'Parameters')]")
+    @FindBy(xpath = "//span[text()='Parameters']")
     private WebElement parametersButton;
-    @FindBy(xpath= "//span[normalize-space()='Discounts']")
+    @FindBy(xpath = "//span[text()='Discounts']")
     private WebElement discountsButton;
 
-    @FindBy(xpath= "(//*[name()='svg'][@role='img'])[164]")
+    @FindBy(xpath = "(//span[@class='mat-button-wrapper'])[11]")
     private WebElement editDiscountsButton;
 
 

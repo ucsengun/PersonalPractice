@@ -31,8 +31,9 @@ public class Departments {
 
     @And("fill form except school code")
     public void fillFormExceptSchoolCode() {
-        du.getNameSpace();
-        du.getCodeSpace();
+        du.sendKeysMethod(du.getNameSpace(), "abcdefg");
+        du.sendKeysMethod(du.getCodeSpace(), "abcd");
+        du.clickMethod(du.getSaveButton());
     }
 
     @Then("see error message for school code")

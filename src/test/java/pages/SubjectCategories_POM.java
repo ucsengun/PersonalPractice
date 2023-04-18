@@ -17,10 +17,10 @@ public class SubjectCategories_POM extends MyMethods {
     @FindBy(xpath= "//span[text()='Setup']")
     private WebElement educationSetupButton;
 
-    @FindBy(xpath= "//span[normalize-space()='Subject Categories']")
+    @FindBy(xpath= "//span[text()='Subject Categories']")
     private WebElement subjectCategoriesButton;
 
-    @FindBy(xpath= "(//*[name()='svg'][@class='svg-inline--fa fa-plus'])[1]")
+    @FindBy(css= "svg[data-icon='plus']")
     private WebElement addSubjectCategoriesButton;
 
     @FindBy(xpath= "//input[@id='ms-text-field-2']")

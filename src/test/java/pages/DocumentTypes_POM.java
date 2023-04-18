@@ -11,10 +11,10 @@ public class DocumentTypes_POM extends MyMethods {
         PageFactory.initElements(DriverClass.getDriver(), this);
     }
 
-    @FindBy(xpath= "//span[normalize-space()='Document Types']")
+    @FindBy(xpath = "//span[text()='Document Types']")
     private WebElement documentTypesButton;
 
-    @FindBy(xpath= "//tbody/tr[1]/td[7]/div[1]/ms-delete-button[1]/button[1]/span[1]")
+    @FindBy(css = "svg[data-icon='trash-can']")
     private WebElement documentTypesTrashButton;
 
     @FindBy(xpath= "//button[@type='submit']")

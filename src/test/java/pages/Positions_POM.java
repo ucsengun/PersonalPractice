@@ -14,16 +14,16 @@ public class Positions_POM extends MyMethods {
     @FindBy(xpath= "//span[contains(text(), 'Human Resources')]")
     private WebElement humanResourcesButton;
 
-    @FindBy(xpath= "//span[contains(text(), 'Setup']")
+    @FindBy(xpath= "(//span[text()='Setup'])[3]")
     private WebElement setupHumanResourcesButton;
 
-    @FindBy(xpath= "//span[normalize-space()='Positions']")
+    @FindBy(xpath= "(//span[text()='Positions'])")
     private WebElement positionsButton;
 
-    @FindBy(xpath= "//button[@mat-icon-button][@color='warn']")
+    @FindBy(css = "svg.svg-inline--fa.fa-trash-can")
     private WebElement positionsTrashButton;
 
-    @FindBy(xpath= "//button[@type='submit']")
+    @FindBy(css = "button[type='submit']")
     private WebElement deletePositionsButton;
 
     @FindBy(xpath= "")
