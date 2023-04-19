@@ -19,3 +19,14 @@ Feature: School Locations
     And Click Add School Location button
     And Fill except school location name
     Then See error message for school location name
+
+  Scenario:Validate Edit School Location for Name
+    Given navigate to website
+    When login
+    And Click on Setup from the menu on the left
+    And Click School Setup
+    And Click Locations
+    And Click Edit School Location button
+    And Change Name of school location
+    And Click save for name
+    Then See success message for editing location name
