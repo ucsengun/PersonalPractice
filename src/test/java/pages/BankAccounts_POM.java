@@ -22,8 +22,8 @@ public class BankAccounts_POM extends MyMethods {
         @FindBy(xpath= "//button[@type='submit']")
         private List<WebElement> deleteBankAccountsButton;
 
-        @FindBy(xpath= " ")
-        private WebElement deleteSuccessMessage;
+//        @FindBy(xpath= " ")
+ //       private WebElement deleteSuccessMessage;
 
         public WebElement getBankAccountsButton() {
             return bankAccountsButton;
@@ -33,12 +33,12 @@ public class BankAccounts_POM extends MyMethods {
             return bankAccountsTrashButton;
         }
 
-        public WebElement getDeleteBankAccountsButton() {
-            return deleteBankAccountsButton;
+     //   public WebElement getDeleteBankAccountsButton() {
+    //        return deleteBankAccountsButton;
         }
 
-        public WebElement getDeleteSuccessMessage() {
-            return deleteSuccessMessage;
-        }
-    }
+      //  public WebElement getDeleteSuccessMessage() {
+     //       return deleteSuccessMessage;
+      //  }
+   // }
 

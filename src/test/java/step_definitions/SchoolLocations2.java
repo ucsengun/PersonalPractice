@@ -2,6 +2,7 @@ package step_definitions;
 
 import io.cucumber.java.en.And;
 import io.cucumber.java.en.Then;
+import org.testng.Assert;
 import pages.SchoolLocations_POM;
 
 public class SchoolLocations2 {
@@ -15,6 +16,7 @@ public class SchoolLocations2 {
 
     @Then("See error message for school location name")
     public void seeErrorMessageForSchoolLocationName() {
+        Assert.assertTrue(slu.verifyIsDisplayedMethod(slu.getLocationNameError()));
 
     }
 }

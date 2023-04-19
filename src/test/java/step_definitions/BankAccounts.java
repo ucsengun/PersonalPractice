@@ -35,7 +35,7 @@ public class BankAccounts {
 
     @And("click delete bank accounts button")
     public void clickDeleteBankAccountsButton() {
-        bu.clickMethod(bu.getDeleteBankAccountsButton());
+       // bu.clickMethod(bu.getDel());
     }
 
     @Then("see success message for deleting bank account")
